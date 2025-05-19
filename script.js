@@ -31,7 +31,14 @@ document.querySelectorAll('section').forEach(section => {
   observer.observe(section);
 });
 
-//skills section
+//hamburger
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active'); // Toggle the 'active' class on the navigation menu
+});
+
 
  
 
